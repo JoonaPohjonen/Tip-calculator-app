@@ -1,0 +1,366 @@
+/***************************
+ * CSS for the page itself *
+ ***************************/
+body {
+    font-family: "Space Mono";
+}
+
+.background-all {
+    background-color: hsl(185, 41%, 84%);
+    padding-top: 9%;
+}
+
+.content-background {
+    justify-content: center;
+    display: flex;
+}
+
+/*********************************************
+ * CSS for the calculator and its background *
+ *********************************************/
+.calculator {
+    background-color: hsl(0, 0%, 100%);
+    width: 1440px;
+    height: 500px;
+    border-radius: 15px;
+
+    display: grid;
+    grid-gap: 30px;
+    padding: 50px;
+
+    grid-template-columns: 50%;
+}
+
+/*****************************************
+ * Everything inside the giant blue cube *
+ *****************************************/
+.item1 {
+    background-color: hsl(183, 100%, 15%);
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 3;
+    border: 20px;
+    border-radius: 15px;
+}
+
+.giantCubeInput {
+    float: right;
+    width: 50%;
+    height: 50px;
+    margin-right: 5%;
+    margin-top: 11%;
+    border-radius: 7px;
+    border-style: none;
+    font-size: 200%;
+    font-family: "Space Mono";
+    font-weight: 700;
+    text-align: right;
+    color:hsl(172, 67%, 45%);
+    background-color: hsl(183, 100%, 15%);
+}
+
+.cubeTextUpper {
+    padding: 10% 0% 0% 10%;
+    color: hsl(0, 0%, 100%);
+    font-family: "Space Mono";
+    font-weight: 700;
+}
+
+.cubeTextBottom {
+    padding: 0% 0% 0% 10%;
+    color: hsl(184, 14%, 56%);
+    font-family: "Space Mono";
+    font-weight: 700;
+}
+
+.resetButton {
+    width: 70%;
+    height: 12%;
+    margin-left: 15%;
+    margin-top: 10%;
+    background-color: hsl(172, 67%, 45%);
+    border-radius: 7px;
+    border-style: none;
+    font-size: 170%;
+    font-family: "Space Mono";
+    font-weight: 700;
+    color: hsl(183, 100%, 15%);
+}
+
+.resetButton:hover {
+    background-color:hsl(172, 100%, 82%);
+    cursor: pointer;
+}
+
+/******************************************
+ * Basic padding for rest of the elements *
+ ******************************************/
+.item2 {
+    padding-left: 15px;
+}
+
+.item3 {
+    padding-left: 15px;
+}
+
+.item4 {
+    padding-left: 15px;
+}
+
+/*********************************************
+ * CSS concerning two identical input fields *
+ *********************************************/
+.input {
+    width: 85%;
+    padding: 12px 20px;
+    background-color: hsl(185, 41%, 84%);
+    border-style: none;
+    border-radius: 0px 7px 7px 0px;
+    height: 54px;
+    font-size: 180%;
+    font-family: "Space Mono";
+    text-align: right;
+    font-weight: 700;
+    box-sizing: border-box;
+}
+
+.inputFocusBlue {
+    border-top-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-color: hsl(172, 67%, 45%);
+    outline: none;
+}
+
+.inputFocusRed {
+    border-top-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-color: orangered;
+    outline: none;
+}
+
+.letThereBeBlue {
+    border-top-style: solid;
+    border-left-style: solid;
+    border-bottom-style: solid;
+    border-color: hsl(172, 67%, 45%);
+    border-width: 2px;
+    outline: none;
+}
+
+.letThereBeRed {
+    border-top-style: solid;
+    border-left-style: solid;
+    border-bottom-style: solid;
+    border-color: orangered;
+    border-width: 2px;
+    outline: none;
+}
+
+.leftInput {
+    width: 7%;
+    padding: 12px 0px;
+    background-color: hsl(185, 41%, 84%);
+    height: 30px;
+    border-radius: 7px 0px 0px 7px;
+    font-size: 180%;
+}
+
+.leftInputCube {
+    width: 60px;
+    background-color: hsl(185, 41%, 84%);
+    height: 54px;
+    border-radius: 7px 0px 0px 7px;
+    float: left;
+    box-sizing: border-box;
+}
+
+.svg {
+    width: 50px;
+    height: 50px;
+}
+
+/**********************
+ * Persentage buttons *
+ **********************/
+.button {
+    width: 175px;
+    height: 65px;
+    background-color:hsl(183, 100%, 15%);
+    border-radius: 7px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    font-family: "Space Mono";
+    font-size: 180%;
+    color: white;
+    border-style: none;
+    font-weight: 700;
+}
+
+.button:hover {
+    background-color:hsl(172, 100%, 82%);
+    cursor: pointer;
+}
+
+.sectionText {
+    font-weight: 700;
+}
+
+.customTip {
+    width: 175px;
+    height: 65px;
+    background-color: hsl(185, 41%, 84%);
+    border-radius: 7px;
+    box-sizing: border-box;
+    border-style: none;
+    font-family: "Space Mono";
+    font-size: 180%;
+    color: white;
+    text-align: center;
+    font-weight: 700;
+}
+
+/***********
+ * Credits *
+ ***********/
+.attribution {
+    padding-top: 10%;
+}
+
+/*********************************
+ * CSS for different resolutions *
+ *********************************/
+@media only screen and (max-width: 1295px) {
+    .item1 {
+        grid-row: 1 / span 3;
+    }
+
+    .input {
+        width: 80%;
+    }
+
+    .button {
+        width: 145px;
+        height: 55px;
+    }
+
+    .customTip {
+        width: 145px;
+        height: 55px;
+    }
+
+    .resetButton {
+        margin-top: 20%;
+    }
+}
+
+@media only screen and (max-width: 1115px) {
+    .calculator {
+        height: 550px;
+    }
+
+    .resetButton {
+        margin-top: 35%;
+    }
+}
+
+@media only screen and (max-width: 1115px) {
+    .resetButton {
+        margin-top: 50%;
+    }
+}
+
+@media only screen and (max-width: 785px) {
+
+    .calculator {
+        height: 1075px;
+        display: inline;
+    }
+
+    .resetButton {
+        height: 60px;
+        margin-top: 20%;
+        margin-bottom: 10%;
+    }
+
+    .button {
+        width: 170px;
+        height: 65px;
+    }
+
+    .customTip {
+        width: 170px;
+        height: 65px;
+    }
+
+    .item2 {
+        padding-left: 45px;
+        padding-top: 35px;
+    }
+    
+    .item3 {
+        padding-left: 45px;
+    }
+
+    .item4 {
+        padding-left: 45px;
+    }
+}
+
+@media only screen and (max-width: 530px) {
+    .calculator {
+        height: 980px;
+        display: inline;
+    }
+
+    .button {
+        width: 140px;
+        height: 55px;
+    }
+
+    .customTip {
+        width: 140px;
+        height: 55px;
+    }
+
+    .input {
+        width: 73%;
+    }
+}
+
+@media only screen and (max-width: 470px) {
+    .button {
+        width: 110px;
+        height: 50px;
+        font-size: 150%;
+    }
+
+    .customTip {
+        width: 110px;
+        height: 50px;
+        font-size: 150%;
+    }
+
+    .input {
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 415px) {
+    .calculator {
+        height: 920px;
+        display: inline;
+    }
+
+    .button {
+        width: 90px;
+        height: 45px;
+        font-size: 130%;
+    }
+
+    .customTip {
+        width: 90px;
+        height: 45px;
+        font-size: 130%;
+    }
+}
